@@ -1,0 +1,166 @@
+* {box-sizing: border-box;}
+body{
+    margin: 0;
+    padding: 0;
+    position: fixed;
+    width: 100%;
+    font-family: 'Roboto Mono', monospace;
+}
+
+:root{
+    --color1: #D3EBCD;
+    --color2: #AEDBCE;
+    --color3: #839AA8;
+    --color4: #635666;
+    --color5: #FCF8E8;
+    --color6: #DFF6FF;
+    --color7: #CDF0EA;
+    --color8: #F9F9F9;
+    --smll: 14px;
+    --mdm: 16px;
+    --hgh: 18px;
+    --exhgh: 20px;
+}
+
+header{
+    width: 100%;
+    height: 45px;
+}
+header nav{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    background-color: var(--color4);
+}
+header nav .nav--left-part{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.nav--left-part img{
+    width: 50px;
+    height: 40px;
+    margin-left: 10px;
+    cursor: pointer;
+}
+.nav--left-part p{
+    margin: 0;
+    margin-left: 15px;
+}
+.left-part--logo-name{
+    color: white;
+    font-weight: 700;
+}
+.nav--right-part .right-part--list{
+    display: flex;
+    flex-direction: row;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+.right-part--list li a{
+    text-decoration: none;
+    color: white;
+    padding: 0 10px;
+}
+.main-background--container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(rgba(20,15,29,0.75), rgba(20,15,29,0.75)), url('../assets/70278-estudiar.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+}
+.main--background{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 75px;
+}
+.main--background-title, .main--background-subtitle{
+    color: white;
+    font-weight: bold;
+    font-size: 30px;
+    line-height: 36px;
+    text-align: center;
+}
+.main--background-title{
+    margin: 0;
+    padding-bottom: 20px;
+}
+.main--background-subtitle{
+    margin: 0;
+    padding-bottom: 25px;
+}
+.main--background-button{
+    border: 3px solid var(--color2);
+    height: 38px;
+    width: 200px;
+    background-color: transparent;
+    border-radius: 10px;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+}
+.icons{
+    position: absolute;
+    bottom: 80px;
+    left: 50px;
+}
+.icons--ws-icon, .icons--fb-icon, .icons--ig-icon, .icons--in-icon{
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    margin-left: 5px;
+}
+.icons--ws-icon{
+    background-image: url('../assets/whatsapp-svgrepo-com.svg');
+}
+.icons--fb-icon{
+    background-image: url('../assets/facebook-svgrepo-com.svg');
+}
+.icons--ig-icon{
+    background-image: url('../assets/instagram-svgrepo-com.svg');
+}
+.icons--in-icon{
+    background-image: url('../assets/linkedin-svgrepo-com.svg');
+}
+
+@media (max-width: 480px){
+
+  nav .right-part--list{
+    display: none;
+  }
+  nav .nav--right-part{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+  }
+  #nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .menu{
+      background-image: url('../assets/menu-svgrepo-com.svg');
+      background-repeat: no-repeat;
+      background-size: contain;
+      background-position: center;
+      display: inline-block;
+      width: 30px;
+      height: 30px;
+      margin-right: 20px;
+      cursor: pointer;
+  }
+
+}
