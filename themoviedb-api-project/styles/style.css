@@ -1,0 +1,487 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+:root{
+    --a: #E9EFC0;
+    --b: #B4E197;
+    --c: #83BD75;
+    --d: #4E944F;
+    --e: #B4FF9F;
+    --f: #F9FFA4;
+    --g: #FFD59E;
+    --h: #FFA1A1;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+}
+article{
+    cursor: pointer;
+}
+header .header-content{
+    width: 100%;
+    height: 60px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--c);
+}
+.header-content--left{
+    padding-left: 20px;
+}
+.header-content--left-form{
+    display: flex;
+    flex-direction: row;
+    height: 34px;
+}
+.header-content--left-form input{
+    width: 175px;
+    outline: none;
+    border: none;
+    background-color: var(--f);
+    border-top: 3px solid var(--a);
+    border-left: 3px solid var(--a);
+    border-bottom: 3px solid var(--a);
+    border-radius: 10px 0 0 10px;
+    padding-left: 15px;
+}
+.header-content--left-form button{
+    border: none;
+    outline: none;
+    background-color: var(--f);
+    border-top: 3px solid var(--a);
+    border-right: 3px solid var(--a);
+    border-bottom: 3px solid var(--a);
+    border-radius: 0 10px 10px 0;
+    cursor: pointer;
+}
+.header-content--right{
+    padding-right: 20px;
+}
+.header-content--right .menu-icon{
+    display: inline-block;
+    margin-top: 4px;
+    width: 32px;
+    height: 32px;
+    background-image: url('https://www.svgrepo.com/show/5186/menu.svg');
+    cursor: pointer;
+}
+main{
+    width: 100%;
+    height: auto;
+}
+main .previewTodaySection, .previewWeekSection{
+    width: 90%;
+    margin: 0 auto;
+}
+.previewTodaySection .todaySection--title{
+    margin: 0;
+    padding: 30px 0 10px 0;
+    font-weight: bold;
+    font-size: 24px;
+    text-align: justify;
+}
+.previewTodaySection .todaySection--description{
+    margin: 0;
+    padding: 20px 0 20px 0;
+    font-size: 20px;
+    font-weight: 400;
+    text-align: justify;
+}
+.previewTodaySection .todaySection--subtitle{
+    padding-bottom: 20px;
+    margin: 0;
+    font-size: 20px;
+}
+.container--title-seemore{
+    display: flex;
+    flex-direction: column;
+}
+.container--title-seemore button{
+    display: inline-block;
+    width: 100px;
+    text-align: center;
+    margin: 0 0 15px 0;
+    border: none;
+    background-color: transparent;
+    padding: 5px;
+    border: 1px solid var(--b);
+    border-radius: 12px;
+    cursor: pointer;
+}
+.container--title{
+    margin: 0;
+    padding: 15px 0;
+}
+.container-cards--card{
+    display: flex;
+    flex-direction: row;
+    overflow-y: hidden;
+    overflow-x: scroll;
+    gap: 26px;
+}
+.container-cards--card .card img{
+    width: 150px;
+    height: 225px;
+    border-radius: 12px;
+}
+.card--text-card{
+    margin: 0;
+    padding: 4px 0 20px 0;
+    text-align: center;
+}
+.genresSection{
+    width: 90%;
+    margin: 0 auto;
+    height: auto;
+}
+.genresSection .genresSection--title{
+    font-size: 22px;
+    font-weight: bold;
+    margin: 0;
+    padding: 20px 0;
+}
+.genresSection .genresSection--container{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+}
+.genresSection--container .genresSection--cardContainer{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 15px;
+}
+.genresSection--container .genres-color{
+    display: inline-block;
+    border-radius: 8px;
+    width: 21px;
+    height: 21px;
+    background-color: var(--d);
+    cursor:pointer;
+}
+.genresSection--container .genres-name{
+    display: inline-block;
+    font-size: 16px;
+    font-weight: 400;
+    padding-left: 4px;
+    cursor:pointer;
+}
+.menu-section{
+    width: 100%;
+    height: 100vh;
+    background-color: #FFF3FF;
+}
+.menu-section .menu-section--return-home{
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 30px;
+    border-bottom: 1px solid #bbacac;
+}
+.return-home--icon{
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    cursor: pointer;
+    background-image: url('https://www.svgrepo.com/show/13655/back.svg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+.menu-section--return-home .return-home--text{
+    font-size: 26px;
+    padding-left: 12px;
+}
+.menu-section--option-lists{
+    width: 90%;
+    margin: 0 auto;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+}
+.menu-section--option-lists li{
+    padding: 20px 0;
+    font-size: 21px;
+    font-weight: 500;
+    border-bottom: 1px solid #bbacac;
+}
+#option-lists--today, #option-lists--week{
+    cursor: pointer;
+}
+.trendsToday-section--return-home, .trendsWeek-section--return-home{
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 30px;
+}
+.trends-today--section, .trends-week--section{
+    width: 90%;
+    height: auto;
+    margin: 0 auto;
+}
+.trends-today--section .home-icon, .trends-week--section .home-icon{
+    display: inline-block;
+    background-image: url('https://www.svgrepo.com/show/30556/home.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 40px;
+    height: 40px;
+    margin-top: 20px;
+    cursor: pointer;
+    border: 1px solid black;
+    border-radius: 50%;
+}
+.title-and-container .today-selection, .title-and-container .week-selection{
+    margin: 0;
+    padding: 20px 0;
+}
+.trends-today--cards-container, .trends-week--cards-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 150px);
+    gap: 15px;
+    justify-content: center;
+}
+.trends-today--cards-container img, .trends-week--cards-container img{
+    width: 150px;
+    height: 225px;
+    border-radius: 15px;
+}
+.movie-details--section{
+    width: 100%;
+    height: auto;
+    position: relative;
+}
+.movie-details--return-home-icon{
+    display: inline-block;
+    position: absolute; 
+    font-size: 25px;
+    cursor: pointer;
+    left: 0;
+    top: 0;
+    top: 30px;
+    left: 20px;
+}
+.movie-details--img{
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(rgba(11,23,53,75), rgba(5,7,12,0.30), rgba(22, 69, 190, 0.3));
+    border-radius: 0 0 30px 30px;
+}
+.movie-details--img .poster-img{
+    width: 320px;
+    height: 90%;
+    text-align: center;
+    border-radius:15px;
+    object-fit: contain;
+
+}
+.movie-details--title-subtitle{
+    width: 90%;
+    margin: 0 auto;
+    height: auto;
+}
+.movie-details--title-subtitle .movie-details--title{
+    margin: 0;
+    padding: 20px 0;
+    font-size: 24px;
+    font-weight: bold;
+}
+.movie-details--title-subtitle .movie-details--subtitle{
+    margin: 0;
+    padding: 0 0 20px 0;
+    font-size: 17px;
+    font-weight: 300;
+    text-align: justify;
+}
+.star-count{
+    width: 90%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 0 auto;
+    margin-bottom: 20px;
+}
+.star-count .star-icon{
+    font-size: 22px;
+
+}
+.star-count .star-rate{
+    font-size: 22px;
+    padding-left: 4px;
+}
+.movie-details--info{
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+.date-time-cont{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.favorite-cont{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.movie-details--info .date-time, .movie-details--info .favorite-count, .movie-details--info .date-icon, .movie-details--info .favorite-icon{
+    font-size: 22px;
+}
+.movie-details--info .date-time, .movie-details--info .favorite-count{
+    padding-left: 4px;
+}
+.genres-in-movie{
+    width: 90%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+.genres-in-movie--container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 10px;
+}
+.genres-in-movie--container .genre-color-icon{
+    display: inline-block;
+    width: 22px;
+    height: 22px;
+    background-color: var(--b);
+    border-radius: 7px;
+}
+.genres-in-movie--container .genre-name{
+    font-size: 19px;
+    padding-left: 4px;
+    font-weight: 400;
+}
+.movie-per-category--return{
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 50px;
+    margin-top: 12px;
+}
+.movie-per-category--category-title{
+    width: 90%;
+    margin: 0 auto;
+    padding: 20px 0;
+    font-size: 20px;
+    font-weight: bold;
+}
+.movie-per-category--return .movie-per-category--title{
+    margin: 0;
+    padding-left: 8px;
+}
+.movie-per-category--card-container{
+    width: 90%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 150px);
+    justify-content: center;
+    align-items: center;
+    gap: 14px;
+}
+.movie-per-category--card-img-card{
+    width: 150px;
+    height: 225px;
+    text-align: center;
+    border-radius: 12px;
+}
+.movie-per-category--card-container .card{
+    height: 310px;
+    width: 150px;
+    overflow-y: hidden;
+    
+}
+.movie-per-category--card-text-card{
+    margin: 0;
+    padding: 8px 0 20px 0;
+    font-weight: 300;
+    font-size: 17px;
+    text-align: center;
+}
+.searchZone--return{
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.searchZone--card{
+    width: 150px;
+    height: 310px;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    cursor: pointer;
+}
+.searchZone--title{
+    margin: 0;
+    padding: 20px 0 20px 12px;
+}
+.searchZone-cards--container{
+    width: 90%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 150px);
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+.searchZone-cards--container .searchZone--card-img-card{
+    width: 150px;
+    height: 225px;
+    border-radius: 12px;
+}
+.relatedMovies--title{
+    width: 90%;
+    margin: 0 auto;
+    padding: 20px 0;
+}
+.relatedMovies{
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    overflow-y: hidden;
+    overflow-x: scroll;
+    gap: 15px;
+    margin-bottom: 30px;
+}
+.relatedMovies .relatedMovies--card{
+    width: 150px;
+    height: 310px;
+}
+.relatedMovies .relatedMovies--card .relatedMovies--card-img-card{
+    width: 150px;
+    height: 225px;
+    border-radius: 12px;
+}
+.relatedMovies--card-text-card{
+    margin: 4px 0 20px 0;
+    text-align: center;
+    font-weight: 300;
+    font-size: 17px;
+}
+
+.inactive{
+    display: none;
+}

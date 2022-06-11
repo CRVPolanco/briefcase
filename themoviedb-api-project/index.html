@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./styles/style.css">
+    <title>Document</title>
+</head>
+<body>
+
+    <header id="header" class="header inactive">
+        <section id="header-content" class="header-content">
+            <div class="header-content--left">
+                <form class="header-content--left-form">
+                    <input placeholder="Buscar película" id="inputSearch" class="inputSearch">
+                    <button id="searchButton">🔍</button>
+                </form>
+            </div>
+            <div class="header-content--right">
+                <span id="menu-icon" class="menu-icon"></span>
+            </div>
+        </section>
+    </header>
+    <main id="main" class="main">
+        <section id="todaySection" class="previewTodaySection">
+            <h2 class="todaySection--title">Las mejores películas las encontrarás aquí</h2>
+            <p class="todaySection--description">El mejor catálogo de películas para ti</p>
+              <div class="container--title-seemore">
+                  <h3 class="container--title">Lo mejor de hoy</h3>
+                  <button id="seeMoreButtonToday" type="button">Ver más</button>
+              </div>
+                <div class="container-cards--card">
+                    <!-- <article class="card">
+                        <img class="card--img-card" src="https://www.themoviedb.org/t/p/w220_and_h330_face/b0j9rHYpRML7dKm5xw9e97HTDJF.jpg" alt="">
+                        <p class="card--text-card">Venom: Habrá matanza</p>
+                    </article> -->
+                </div>
+            </div>
+        </section>
+        <section id="weekSection" class="previewWeekSection">
+            <div class="container--title-seemore">
+                <h3 class="container--title">Lo mejor de la semana</h3>
+                <button id="seeMoreButtonWeek" type="button">Ver más</button>
+            </div>
+            <div class="container-cards--card">
+                <!-- <article class="card">
+                    <img class="card--img-card" src="" alt="">
+                    <p class="card--text-card"></p>
+                </article> -->
+            </div>
+        </section>
+        <section id="genresSection" class="genresSection">
+            <h3 class="genresSection--title">Géneros</h3>
+            <div class="genresSection--container">
+                <!-- <div class="genresSection--cardContainer">
+                    <span class="genres-color"></span>
+                    <span class="genres-name">Comedia</span>
+                </div> -->
+            </div>
+        </section>
+        <section id="menu-section" class="menu-section">
+            <div class="menu-section--return-home">
+                <span class="return-home--icon"></span>
+                <h2 class="return-home--text">Regresar al home</h2>
+            </div>
+            <ul class="menu-section--option-lists">
+                <li id="option-lists--today">Selección del día</li>
+                <li id="option-lists--week">Selección de la semana</li>
+                <li id="option-lists--characters">Actores</li>
+            </ul>
+        </section>
+
+        <section class="trends-today--section inactive">
+            <span class="home-icon" title="Regresar al home"></span>
+            <div class="title-and-container">
+                <h2 class="today-selection">Selección de hoy.</h2>
+                <div class="trends-today--cards-container">
+                    <!-- <article class="card">
+                        <img class="card--img-card" src="https://www.themoviedb.org/t/p/w220_and_h330_face/b0j9rHYpRML7dKm5xw9e97HTDJF.jpg" alt="">
+                        <p class="card--text-card">Venom: Habrá matanza</p>
+                    </article> -->
+                </div>
+            </div>
+        </section>
+        <section class="trends-week--section">
+            <span class="home-icon" title="Regresar al home"></span>
+            <div class="title-and-container">
+                <h2 class="week-selection">Selección de la semana.</h2>
+                <div class="trends-week--cards-container">
+                    <!-- <article class="card">
+                        <img class="card--img-card" src="https://www.themoviedb.org/t/p/w220_and_h330_face/b0j9rHYpRML7dKm5xw9e97HTDJF.jpg" alt="">
+                        <p class="card--text-card">Venom: Habrá matanza</p>
+                    </article> -->
+                </div>
+            </div>
+        </section>
+        <section id="movieDetails--section" class="movieDetails--section">
+            <div class="movie-details--img">
+                <span class="movie-details--return-home-icon">◀️</span>
+                <img class="poster-img" src="https://www.themoviedb.org/t/p/w220_and_h330_face/b0j9rHYpRML7dKm5xw9e97HTDJF.jpg" alt="">
+            </div>
+            <div class="movie-details--title-subtitle">
+                <h2 class="movie-details--title">Venom: habrá venganza</h2>
+                <p class="movie-details--subtitle">Venom volverá por venganza más preparado pa destrozar qlitos bb</p>
+            </div>
+            <div class="star-count">
+                <span class="star-icon">🌟</span>
+                <span class="star-rate">6.9</span>
+            </div>
+            <div class="movie-details--info">
+                <div class="date-time-cont">
+                    <span class="date-icon">📅</span>
+                    <span class="date-time">27/02/2019</span>
+                </div>
+                <div class="favorite-cont">
+                    <span class="favorite-icon">❤️</span>
+                    <span class="favorite-count">834</span>
+                </div>
+            </div>
+            <div class="genres-in-movie">
+                <!-- <div class="genres-in-movie--container">
+                    <span class="genre-color-icon"></span>
+                    <span class="genre-name">Comedia</span>
+                </div> -->
+            </div>
+            <h2 class="relatedMovies--title">Películas recomendadas</h2>
+            <div class="relatedMovies">
+                <article class="relatedMovies--card">
+                    <img class="relatedMovies--card-img-card" src="https://www.themoviedb.org/t/p/w220_and_h330_face/b0j9rHYpRML7dKm5xw9e97HTDJF.jpg" alt="">
+                    <p class="relatedMovies--card-text-card">Venom: Habrá matanza</p>
+                </article>
+            </div>
+        </section>
+        <section id="movie-per-category" class="movie-per-category">
+            <div class="movie-per-category--return">
+                <span class="return-home--icon"></span>
+                <h2 class="movie-per-category--title">Regresar al menú</h2>
+            </div>
+            <h2 class="movie-per-category--category-title">Action</h2>
+            <div class="movie-per-category--card-container">
+                <!-- <article class="card">
+                    <img class="movie-per-category--card-img-card" src="https://www.themoviedb.org/t/p/w220_and_h330_face/b0j9rHYpRML7dKm5xw9e97HTDJF.jpg" alt="">
+                    <p class="movie-per-category--card-text-card">Venom: Habrá matanza</p>
+                </article> -->
+            </div>
+        </section>
+        <section id="searchZone" class="searchZone">
+            <div class="searchZone--return">
+                <span class="return-home--icon"></span>
+                <h2 class="searchZone--title">Ejemplo</h2>
+            </div>
+            <div class="searchZone-cards--container">
+                <!-- <article class="searchZone--card">
+                        <img class="searchZone--card-img-card" src="https://www.themoviedb.org/t/p/w220_and_h330_face/b0j9rHYpRML7dKm5xw9e97HTDJF.jpg" alt="">
+                        <p class="searchZone--card-text-card">Venom: Habrá matanza</p>
+                </article> -->
+            </div>
+        </section>
+    </main>
+    
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="./src/api_key.js"></script>
+    <script src="./src/main.js"></script>
+    <script src="./src/node.js"></script>
+    <script src="./src/navigator.js"></script>
+</body>
+</html>
